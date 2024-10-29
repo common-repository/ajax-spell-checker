@@ -1,0 +1,182 @@
+------------------------------------------------------------
+revno: 19
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Sun 2006-05-14 19:46:01 +0300
+message:
+  updated plugin version info
+------------------------------------------------------------
+revno: 18
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Sun 2006-05-14 19:46:01 +0300
+message:
+  minor bugfix in options-lib.php
+------------------------------------------------------------
+revno: 17
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Sun 2006-05-14 19:25:55 +0300
+message:
+  Additions:
+   * phpdoc style documentation everywhere
+   * explicit jedit folds
+   * options file template library
+  
+  Changes:
+   * the options interface got a bit friendlier: only the installed dictionaries are listed, user can select the backend, 
+     unavailable backends are listed, but can not be selected
+   * refactored code to be more php5-like while preserving compatibility with php4
+  
+  Bugfixes:
+   * Aspell didn't work right in php4, it looks like either php's stream handling or the stream_select function are buggy
+   * Google didn't work if the language provided wasn't supported, made it fall back to English
+------------------------------------------------------------
+revno: 16
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Wed 2006-05-03 23:54:18 +0300
+message:
+   @foreach isn't legal, need to remember that...
+------------------------------------------------------------
+revno: 15
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Wed 2006-05-03 15:46:16 +0300
+message:
+  google code complained if text was not passed to it, fixed...
+------------------------------------------------------------
+revno: 14
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Sun 2006-04-30 14:04:28 +0300
+message:
+  Fixed typo in spell-check-library.php
+------------------------------------------------------------
+revno: 13
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Wed 2006-04-26 14:30:32 +0300
+message:
+  added the changelog to revision control
+------------------------------------------------------------
+revno: 12
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: ajax_spellchecker
+timestamp: Mon 2006-04-24 16:26:11 +0300
+message:
+  fixed the Opera problem, tested in Opera 8.5/Linux
+  
+  Opera seems to have something against text/javascript responses to xmlhttprequest; changing it to test/plain solved the issue.
+------------------------------------------------------------
+revno: 11
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Sun 2006-04-23 10:33:31 +0000
+message:
+  bugfixes
+  
+  * used to pass a parameter by reference, while assigning it a default value; php4 seems not to like this
+  * fixed the menu coordinates computing, if there was scrolling, the suggestions would appear in the wrong place (or not at all)
+  * gathered all common javascript in a file
+  
+  I still have no information whether this works on anything else than _my_ firefox.
+------------------------------------------------------------
+revno: 10
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Sun 2006-04-09 18:02:47 +0000
+message:
+  tag of iacobs@m0n5t3r.info--web/wp-plugins--ajax-spellchecker--0.4--patch-5
+  
+  (automatically generated log message)
+------------------------------------------------------------
+revno: 9
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Thu 2006-04-06 10:33:43 +0000
+message:
+  bugfixes
+  
+  * fixed personal and replacement dictionary path building
+  * removed a stray error_log call
+  * removed support for adding to dictionary and replacement list from the comment code
+------------------------------------------------------------
+revno: 8
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Wed 2006-04-05 12:17:55 +0000
+message:
+  squashed 2 bugs
+  
+  
+  * there was a strange segfault when the text contained numbers; fixed
+  * text got screwed if a replacement word was longer than the replaced word; fixed
+------------------------------------------------------------
+revno: 7
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Wed 2006-04-05 09:20:44 +0000
+message:
+  added source edit and comment support
+  
+  Added:
+  * QuickTags support
+  * Comments support
+  * support for changing the paths to custom dictionary, personal and replacement lists
+------------------------------------------------------------
+revno: 6
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Mon 2006-04-03 23:26:41 +0000
+message:
+  previous bug played dead... now it's really dead
+------------------------------------------------------------
+revno: 5
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Mon 2006-04-03 23:23:50 +0000
+message:
+  bug squashed (update from svn)
+  
+  squashed bug that set wrong default paths for custom and personal dictionaries
+------------------------------------------------------------
+revno: 4
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Sun 2006-04-02 18:16:46 +0000
+message:
+  tag of iacobs@m0n5t3r.info--web/wp-plugins--ajax-spellchecker--0.3--patch-2
+  
+  (automatically generated log message)
+------------------------------------------------------------
+revno: 3
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Sun 2006-04-02 18:12:25 +0000
+message:
+  pretty much usable now, ready for another tag
+  
+  Features added:
+  
+  * multibyte charsets
+  * personal dictionary
+  * personal replacement list
+  * custom main dictionary
+------------------------------------------------------------
+revno: 2
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Fri 2006-03-31 14:05:02 +0000
+message:
+  ready for release
+------------------------------------------------------------
+revno: 1
+committer: Sabin Iacob (m0n5t3r) <iacobs@m0n5t3r.info>
+branch nick: rd
+timestamp: Fri 2006-03-31 06:06:19 +0000
+message:
+  initial import
+  
+  
+  (automatically generated log message)
